@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { logo_url } from '../utils/constants'
-import { FaCircleUser } from "react-icons/fa6";
+
 import Button from '@mui/joy/Button';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from '../utils/firebase';
