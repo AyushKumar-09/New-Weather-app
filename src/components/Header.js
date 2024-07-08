@@ -60,7 +60,7 @@ const Header = () => {
 
     {user&&(
       <div className='m-4 flex'>
-      <FaCircleUser size={40} color='cyan' />
+    
       
       <div className='ml-2 mt-1'>
       <Button 
