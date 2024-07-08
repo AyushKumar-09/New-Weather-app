@@ -43,19 +43,19 @@ const Weather = () => {
       {/* main Body */}
 
       {/*  */}
-      <div className='flex justify-between md:justify-normal'>
-        <div className="h-screen  flex items-center justify-center w-1/2">
+      <div className='flex h-screen items-center justify-center'>
+        <div className="w-1/2 flex justify-center items-center">
 
-          <div className=" w-4/5 mt-20  md:w-2/5  bg-opacity-70 bg-black text-white rounded-xl">
+          <div className=" w-4/5 mt-10  md:w-4/5  bg-opacity-70 bg-black text-white rounded-xl">
             {/* search Bar */}
-            <div className="flex items-center justify-between   md:m-5 p-6 ">
+            <div className="flex items-center justify-between   md:m-2 p-6 ">
               <input type="text"
                 className="rounded-2xl w-full p-4 text-black text-bold"
                 placeholder="Enter Location"
                 onChange={(e) => setSearch(e.target.value)}
 
               />
-              <Button variant='sucess'
+              <Button variant='success'
                 onClick={weatherData}
               >Search</Button>
 
@@ -109,19 +109,15 @@ const Weather = () => {
 
 
               </div>
-
-
-
             }
-
 
           </div>
         </div>
-        { 
-        <div className='w-1/2 '>
+        
+        <div className='w-1/2 flex justify-center items-center'>
         <TempChart />
         </div>
-        }
+        
         </div>
         
 
