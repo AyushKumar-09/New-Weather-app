@@ -42,9 +42,6 @@ var options = {
       name: 'sales',
       data: temp
     }],
-    fill: {
-        colors: ['#F44336', '#E91E63', '#9C27B0']
-      },
     xaxis: {
       categories: generate7DaysArray()
     }
@@ -55,11 +52,7 @@ var options = {
   chart.render();
 
 
-    return (
-        <div id='chart' className='bg-white mt-32 mr-20'> 
-
-        </div>
-    )
+   
 }
 
 export default TempChart

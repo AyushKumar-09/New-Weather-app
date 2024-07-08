@@ -117,9 +117,11 @@ const Weather = () => {
 
           </div>
         </div>
+        { 
         <div className='w-1/2 '>
-        {/* <TempChart /> */}
+        <TempChart />
         </div>
+        }
         </div>
         
 
