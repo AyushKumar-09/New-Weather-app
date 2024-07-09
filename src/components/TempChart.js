@@ -53,7 +53,7 @@ const TempChart = () => {
     }, [wdata]);
 
     return (
-        <div id="chart" className="w-full h-96 bg-white mr-4">
+        <div id="chart" className="w-full h-auto bg-white mr-4">
             {/* Chart will be rendered here */}
         </div>
     );

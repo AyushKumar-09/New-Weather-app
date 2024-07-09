@@ -32,6 +32,11 @@ const Weather = () => {
 
   return (
     <div>
+
+       <div className=''>
+      <Header />
+      </div> 
+      {/* main Body
       {/* background Image */}
       <div className="fixed -z-10">
         <img
@@ -39,16 +44,17 @@ const Weather = () => {
           src={bg_img}
           alt="bg image" />
       </div>
-      <Header />
-      {/* main Body */}
+     
 
       {/*  */}
-      <div className='flex h-screen items-center justify-center'>
-        <div className="w-1/2 flex justify-center items-center">
-
-          <div className=" w-4/5 mt-10  md:w-4/5  bg-opacity-70 bg-black text-white rounded-xl">
+      
+      <div className='flex flex-col md:flex-row h-screen  items-center justify-center '>
+        <div className="md:w-1/2  flex justify-center items-center  ">
+         
+          <div className=" w-4/5 mt-5 md:w-4/5  md:mt-20  bg-opacity-70 bg-black text-white rounded-xl ">
             {/* search Bar */}
-            <div className="flex items-center justify-between   md:m-2 p-6 ">
+          
+            <div className="flex items-center justify-between   md:m-2 p-6 mt-24 ">
               <input type="text"
                 className="rounded-2xl w-full p-4 text-black text-bold"
                 placeholder="Enter Location"
@@ -60,6 +66,7 @@ const Weather = () => {
               >Search</Button>
 
             </div>
+           
 
             {/* only if data is available */}
 
@@ -114,18 +121,19 @@ const Weather = () => {
           </div>
         </div>
         
-        <div className='w-1/2 flex justify-center items-center'>
+        <div className='md:w-1/2 flex justify-center items-center mt-20 md:mt-0'>
         <TempChart />
         </div>
         
         </div>
+        </div>
         
 
 
 
 
-    </div>
+
   )
 }
 
-export default Weather
+export default Weather
